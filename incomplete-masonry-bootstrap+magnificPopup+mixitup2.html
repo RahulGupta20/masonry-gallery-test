@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Starter Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+    .grid-item {
+        margin-bottom: 30px;
+    }
+    </style>
+</head>
+
+<body>
+    <main role="main" class="container">
+        <div class="starter-template">
+            <h1>Problem due to masonry left positioned</h1>
+            <p class="lead">Use this document as a way to quickly start any new project.
+                <br> All you get is this text and a mostly barebones HTML document.</p>
+        </div>
+        <div class="masonry+magnificPopup+mixitup-classed-apllied">
+            <div class="card-body">
+                <button type="button" data-filter="all">All</button>
+                <button type="button" data-filter=".category-a">Category A</button>
+                <button type="button" data-filter=".category-b">Category B</button>
+                <button type="button" data-filter=".category-c">Category C</button>
+            </div>
+            
+            <div class="gallery note-gallery-class-is-applied-for-magnificPopup" id="mix-wrapper">
+                <div class="row grid">
+                    <div class="grid-sizer col-6 col-md-4"></div>
+                    <div class="grid-item col-6 col-md-4 mix category-a">
+                        <div class="grid-item-content">
+                            <a class="test-popup-link" href="images/orange-tree.jpg" title="first image">
+                                <img class="img-fluid rounded" src="images/orange-tree.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-item col-6 col-md-4 mix category-a category-b">
+                        <div class="grid-item-content">
+                            <a class="test-popup-link" href="images/submerged.jpg">
+                                <img class="img-fluid rounded" src="images/submerged.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-item col-6 col-md-4 mix category-a  category-c">
+                        <div class="grid-item-content">
+                            <a class="test-popup-link" href="images/look-out.jpg">
+                                <img class="img-fluid rounded" src="images/look-out.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-item col-6 col-md-4 mix category-a">
+                        <div class="grid-item-content">
+                            <a class="test-popup-link" href="images/one-world-trade.jpg">
+                                <img class="img-fluid rounded" src="images/one-world-trade.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-item col-6 col-md-4 mix category-a">
+                        <div class="grid-item-content">
+                            <a class="test-popup-link" href="images/drizzle.jpg">
+                                <img class="img-fluid rounded" src="images/drizzle.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-item col-6 col-md-4 mix category-a">
+                        <div class="grid-item-content">
+                            <a class="test-popup-link" href="images/cat-nose.jpg">
+                                <img class="img-fluid rounded" src="images/cat-nose.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-item col-6 col-md-4 mix category-a">
+                        <div class="grid-item-content">
+                            <a class="test-popup-link" href="images/contrail.jpg">
+                                <img class="img-fluid rounded" src="images/contrail.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-item col-6 col-md-4 mix category-a">
+                        <div class="grid-item-content">
+                            <a class="test-popup-link" href="images/golden-hour.jpg">
+                                <img class="img-fluid rounded" src="images/golden-hour.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-item col-6 col-md-4 mix category-a">
+                        <div class="grid-item-content">
+                            <a class="test-popup-link" href="images/flight-formation.jpg">
+                                <img class="img-fluid rounded" src="images/flight-formation.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script>
+    $('.grid').masonry({
+        itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+    });
+    </script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script>
+    $('.gallery').each(function() { // the containers for all your galleries
+        $(this).magnificPopup({
+            delegate: 'a', // the selector for gallery item
+            type: 'image',
+            gallery: {
+                enabled: true
+            }
+        });
+    });
+    </script>
+    <script src="js/mixitup.min.js"></script>
+    <script>
+        var mixer = mixitup('#mix-wrapper');
+    </script>
+</body>
+
+</html>
